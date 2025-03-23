@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css/style.css">
     <title>Welcome</title> 
 </head>
-<audio autoplay loop>
-    <source src="wwd.mp3juice.blog - Mili - Entertainment Goblin Slayer 2 Opening Full (256 KBps).mp3" type="audio/mp3"/>
-</audio>
+
 <body>
     <header>
         <a href="#"class="logo">Page</a> 
         <nav>
             <a href="#"class="active">Home</a>
-            <a href="#">About Us</a>
+            <a href="#about">About Us</a>
             <a href="#">Characters</a>
             <a href="#">News</a>
             <a href="#">Trailer</a>
         </nav>
-    </header>
+
+    <div class="container">     
+        <button id="toggleButton">BGM OFF</button>
+    </div>
+
+    <audio id="audio" loop>
+        <source src="wwd.mp3juice.blog - Mili - Entertainment Goblin Slayer 2 Opening Full (256 KBps).mp3" type="audio/mp3"/>
+    </audio>
+
+    <script src="script.js"></script>
+</header>
+
     <section class="home">
     <div class="home-img">
     <img src="goblin slayer.png" alt="">
     </div>
+
     <div class="home-content">
         <h1> Orewa <span>Goblin slayer</span></h1>
         <h3 class="typing-text">i'm a <span></span></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sint, laudantium temporibus iste optio nulla totam quas mollitia voluptate! Nobis dolore fuga explicabo pariatur at maiores. At nisi quasi incidunt.</p>    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cupiditate obcaecati voluptatibus voluptas. Cumque temporibus debitis sit, necessitatibus nulla deleniti, qui sequi corporis sed hic assumenda culpa, soluta suscipit. Quia? or sit amet, consectetur adipisicing elit. Dolores sint, laudantium temporibus iste optio nulla totam quas mollitia voluptate! Nobis dolore fuga explicabo pariatur at maiores. At nisi quasi incidunt.</p>    
     <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-reddit"></i></a>
         <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>        
+        <a href="https://x.com/goblinslaying"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/projectmili?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>        
         </div>
         <a href="#" class="btn">See More >>> </a>
     </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to the Goblin Slayer Fan Page! This website is dedicated to fans of the anime and manga series "Goblin Slayer." Here, you can find the latest news, character information, and updates about the series. Our mission is to provide an engaging platform for fans to connect and share their passion.</p>
+            <p>Join us in discussing your favorite moments, theories, and characters from the series. Follow us on social media for more updates!</p>
+            <img src="logo_goblinslayer_en.png" alt="About Us" class="about-img">
+        </div>
+    </section>
     
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Goblin Slayer Fan Page. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>        
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Goblin Slayer Fan Page</h2>
             </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#">Characters</a>
+                <a href="#">News</a>
+                <a href="#">Trailer</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-reddit"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/goblinslaying"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">&copy; <span id="year"></span> Goblin Slayer Fan Page. All rights reserved.</p>
         </div>
     </footer>
+    
+    <script src="footer.js"></script>
+    
 </body>
 </html>
