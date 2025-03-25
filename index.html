@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Welcome</title> 
+    <link rel="stylesheet" href="style.css/style.css">
+    <title>Testing</title> 
 </head>
 
 <body>
@@ -14,9 +14,9 @@
         <nav>
             <a href="#"class="active">Home</a>
             <a href="#about">About Us</a>
-            <a href="#">Characters</a>
-            <a href="#">News</a>
-            <a href="#">Trailer</a>
+            <a href="#characters">Characters</a>
+            <a href="#news">News</a>
+            <a href="#trailer">Trailer</a>
         </nav>
 
     <div class="container">     
@@ -48,7 +48,7 @@
         <a href="#" class="btn">See More >>> </a>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about fade-in">
         <div class="about-content">
             <h2>About Us</h2>
             <p>Welcome to the Goblin Slayer Fan Page! This website is dedicated to fans of the anime and manga series "Goblin Slayer." Here, you can find the latest news, character information, and updates about the series. Our mission is to provide an engaging platform for fans to connect and share their passion.</p>
@@ -56,18 +56,112 @@
             <img src="logo_goblinslayer_en.png" alt="About Us" class="about-img">
         </div>
     </section>
-    
+
+
+<section id="characters" class="characters fade-in">
+    <h1>Characters</h1>
+    <div class="list">
+    <div class="item">
+            <img src="Goblin_Slayer_Full_Body_II.jpeg" alt="Goblin Slayer">
+            <p class="character-name">Goblin Slayer</p>
+        </div>
+        <div class="item">
+            <img src="Priestess_Full_Body_II.jpg" alt="Priestess">
+            <p class="character-name">Priestess</p>
+        </div>
+        <div class="item">
+            <img src="Cow_Girl_Full_Body_II.jpeg" alt="Cow Girl">
+            <p class="character-name">Cow Girl</p>
+        </div>
+        <div class="item">
+            <img src="High_Elf_Archer_Full_Body_II.jpeg" alt="High Elf Archer">
+            <p class="character-name">High Elf Archer</p>
+        </div>
+        <div class="item">
+            <img src="Dwarf_Shaman.jpeg" alt="Dwarf Shaman">
+            <p class="character-name">Dwarf Shaman</p>
+        </div>
+        <div class="item">
+            <img src="Lizard_Priest_Character_29.jpeg" alt="Lizard Priest">
+            <p class="character-name">Lizard Priest</p>
+        </div>
+        <div class="item">
+            <img src="Guild_Girl_Full_Body_II.jpeg" alt="Guild Girl">
+            <p class="character-name">Guild Girl</p>
+        </div>
+        <div class="item">
+            <img src="Sword_Maiden_Full_Body_II.jpeg" alt="Sword Maiden">
+            <p class="character-name">Sword Maiden</p>
+        </div>
+        <div class="item">
+            <img src="Hero_LN.jpeg" alt="Hero">
+            <p class="character-name">Hero</p>
+        </div>
+</section>
+
+<!-- Modal untuk menampilkan informasi karakter -->
+<div id="characterModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="characterTitle"></h2>
+        <img id="characterImage" src="" alt="">
+        <p id="characterInfo"></p>
+    </div>
+</div>
+
+<!-- News Section -->
+<section id="news" class="news fade-in">
+    <h1>Latest News</h1>
+    <div class="news-list">
+        <article class="news-item fade-in">
+            <img src="poster season 2.jpg" alt="Goblin Slayer Season 2 Announced">
+            <h2>Goblin Slayer Season 2 Announced!</h2>
+            <p>Studio telah mengonfirmasi bahwa musim kedua Goblin Slayer akan segera tayang pada akhir tahun ini.</p>
+            <a href="https://x.com/GoblinSlayer_GA/status/1700071703031038180?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1700071703031038180%7Ctwgr%5E73bb3831fc4b59845b21a133724d4269ca4fa996%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.radiotimes.com%2Ftv%2Ffantasy%2Fanime%2Fgoblin-slayer-season-2%2F" class="read-more">Read More</a>
+        </article>
+
+        <article class="news-item fade-in">
+            <img src="LN Goblin slayer.jpg" alt="New Goblin Slayer Light Novel">
+            <h2>Light Novel Volume 16 Rilis!</h2>
+            <p>Volume terbaru dari novel ringan Goblin Slayer telah dirilis, menampilkan kisah baru yang menegangkan.</p>
+            <a href="#" class="read-more">Read More</a>
+        </article>
+
+        <article class="news-item fade-in">
+            <img src="Goblin slayer game.jpg" alt="Goblin Slayer Game">
+            <h2>Game Goblin Slayer Sedang Dikembangkan?</h2>
+            <p>Kabarnya, sebuah game berbasis Goblin Slayer sedang dalam tahap pengembangan oleh studio ternama.</p>
+            <a href="https://goblinslayer.bushiroadgames.com/en/#about" class="read-more">Read More</a>
+            </article>
+        </div>
+</section>
+
+<section id="trailer" class="trailer fade-in">
+    <h1>OFFICIAL TRAILER</h1>
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/ufYEythBd3w" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <h2>Goblin Slayer Fan Page</h2>
+                <h2>Goblin Slayer Page</h2>
             </div>
             <div class="footer-links">
                 <a href="#">Home</a>
                 <a href="#about">About Us</a>
-                <a href="#">Characters</a>
-                <a href="#">News</a>
-                <a href="#">Trailer</a>
+                <a href="#characters">Characters</a>
+                <a href="#news">News</a>
+                <a href="#trailer">Trailer</a>
             </div>
             <div class="footer-social">
                 <a href="#"><i class="fa-brands fa-reddit"></i></a>
